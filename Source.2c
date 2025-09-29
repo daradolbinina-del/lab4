@@ -1,0 +1,37 @@
+#include <locale.h>
+#include <stdio.h>
+
+int main() 
+{
+    setlocale(LC_CTYPE, "RUS");
+    int n;  
+      
+    // Ввод числа  
+    printf("Введите трехзначное число: ");  
+    scanf("%d", &n);  
+      
+    // Проверка, что число трехзначное  
+    if (n < 100 || n > 999) {  
+        printf("Ошибка: число должно быть трехзначным!\n");  
+        return 1;  
+    }  
+      
+    // Выделение цифр числа  
+    int last = n % 10;            // последняя цифра  
+    int first = n / 100;         // первая цифра  
+    int middle = (n / 10) % 10;  // средняя цифра  
+      
+    // Вычисление суммы цифр  
+    int sum = first + middle + last;  
+      
+    // Формирование числа наоборот  
+    int reversed = last * 100 + middle * 10 + first;  
+      
+    // Вывод результатов  
+    printf("Последняя цифра: %d\n", last);  
+    printf("Первая цифра: %d\n", first);  
+    printf("Сумма цифр: %d\n", sum);  
+    printf("Число наоборот: %d\n", reversed);  
+      
+    return 0;  
+}  
