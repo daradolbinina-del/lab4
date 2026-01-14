@@ -21,6 +21,6 @@
 10. **Конец**
 11. ### Блок-схема
   <img width="452" height="653" alt="image" src="https://github.com/user-attachments/assets/23282734-b71b-48b6-990d-e644a4f938f3" />
-###Пример работы программы
+12. ###Пример работы программы
 <img width="967" height="93" alt="image" src="https://github.com/user-attachments/assets/7f51772b-a1af-45ac-95a1-5616cff8da08" />
 
