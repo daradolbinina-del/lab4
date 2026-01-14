@@ -21,7 +21,25 @@
 10. **Конец**
  ### Блок-схема
   <img width="452" height="653" alt="image" src="https://github.com/user-attachments/assets/23282734-b71b-48b6-990d-e644a4f938f3" />
-  
+
+ ### Реализация программы
+ #define _CRT_SECURE_NO_DEPRECATE
+#include <locale.h>
+#include <stdio.h>
+int main()
+{
+    setlocale (LC_CTYPE, "RUS");
+	int A;
+	int B;
+	int C;
+	int D;
+	int alarm;
+	printf("Введите 4 числа 1 или 0 (срабатывание датчика 1-повторяющееся движение, 0-шум):\n");
+	scanf("%d %d %d %d", &A, &B, &C, &D);
+	alarm = (A == 1) && (B == 1) && (C == 1) && (D == 0) || (A == 0) && (B == 1) && (C == 1) && (D == 1) || (A == 1) && (B == 0) && (C == 1) && (D == 1) || (A == 1) && (B == 1) && (C == 1) && (D == 0) || (A == 1) && (B == 1) && (C == 1) && (D == 1);
+	printf("Запись активна(1-да,0-нет):%d\n", alarm);
+}
+
  ### Пример работы программы
 <img width="967" height="93" alt="image" src="https://github.com/user-attachments/assets/7f51772b-a1af-45ac-95a1-5616cff8da08" />
 
